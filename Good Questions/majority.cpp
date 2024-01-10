@@ -1,3 +1,5 @@
+// Optimal solution has a good logic
+
 #include <bits/stdc++.h>
 using namespace std;
 
