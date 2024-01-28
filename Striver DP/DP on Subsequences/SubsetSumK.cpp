@@ -56,6 +56,7 @@ bool tabulation(int ind, int k, vector<int> &arr, vector<vector<bool>> &dp)
     return dp[ind - 1][k];
 }
 
+
 bool space(int ind, int k, vector<int> &arr)
 {
     vector<bool> prev(k + 1, 0), curr(k + 1, 0);
