@@ -38,13 +38,9 @@ void optimal(int a[], int n)
             break;
         }
     }
-
-    // no non-zero elements:
     if (j == -1)
         return;
 
-    // Move the pointers i and j
-    // and swap accordingly:
     for (int i = j + 1; i < n; i++)
     {
         if (a[i] != 0)

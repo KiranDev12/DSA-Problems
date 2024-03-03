@@ -1,3 +1,5 @@
+//! IT CONTAINS BOTH POSITITVES AND NEGATIVES
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -18,32 +20,37 @@ int brute(vector<int> &a, long long k)
     }
     return len;
 }
-int optimal(vector<int>& a, int k) {
+int optimal(vector<int> &a, int k)
+{
     int n = a.size(); // size of the array.
 
     map<int, int> preSumMap;
     int sum = 0;
     int maxLen = 0;
-    for (int i = 0; i < n; i++) {
-        //calculate the prefix sum till index i:
+    for (int i = 0; i < n; i++)
+    {
+        // calculate the prefix sum till index i:
         sum += a[i];
 
         // if the sum = k, update the maxLen:
-        if (sum == k) {
+        if (sum == k)
+        {
             maxLen = max(maxLen, i + 1);
         }
 
         // calculate the sum of remaining part i.e. x-k:
         int rem = sum - k;
 
-        //Calculate the length and update maxLen:
-        if (preSumMap.find(rem) != preSumMap.end()) {
+        // Calculate the length and update maxLen:
+        if (preSumMap.find(rem) != preSumMap.end())
+        {
             int len = i - preSumMap[rem];
             maxLen = max(maxLen, len);
         }
 
-        //Finally, update the map checking the conditions:
-        if (preSumMap.find(sum) == preSumMap.end()) {
+        // Finally, update the map checking the conditions:
+        if (preSumMap.find(sum) == preSumMap.end())
+        {
             preSumMap[sum] = i;
         }
     }

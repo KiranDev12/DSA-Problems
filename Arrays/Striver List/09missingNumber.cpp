@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int brute(int arr[], int n)
+int brute(int arr[], int n) // O(N^2) & O(1)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -22,7 +22,7 @@ int brute(int arr[], int n)
     return -1;  
 }
 
-int better(int a[], int n)
+int better(int a[], int n) // O(N) & o(N)
 {
     int hash[n+1] = {0};
     for (int i = 0; i < n; i++)
@@ -40,8 +40,9 @@ int better(int a[], int n)
     return -1;
 }
 
-int optimal(int a[], int n){
 
+//! TWO OPTIMAL APPROACHES - 1) SUM 2) XOR
+int optimal(int a[], int n){
     int sum  = 0;
     for (int i = 0; i < n; i++)
     {
@@ -62,7 +63,7 @@ int XOR(int a[], int n){
 }
 int main()
 {
-    int a[5] = {1, 2, 4, 5};
+    int a[5] = {1, 2, 3, 5};
 
     cout<<brute(a, 5)<<endl;
     cout<<better(a, 5)<<endl;
