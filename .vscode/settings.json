@@ -77,7 +77,8 @@
     "random": "cpp",
     "iostream": "cpp",
     "deque": "cpp",
-    "cstdlib": "cpp"
+    "cstdlib": "cpp",
+    "ostream": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
