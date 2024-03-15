@@ -14,23 +14,23 @@ public:
     int maxOccured(int L[], int R[], int n, int maxx)
     {
 
-        int a[maxx + 1] = {}, ans = 0;
+        int freq[maxx + 1] = {0};
         for (int i = 0; i < n; i++)
         {
-            a[L[i]]++;
-            a[R[i] + 1]--;
+            freq[L[i]]++;
+            freq[R[i] + 1]--;
         }
-        int maxi = a[0];
-        for (int i = 0; i <= maxx; i++)
+
+        int res = 0;
+        for (int i = 1; i < maxx; i++)
         {
-            a[i] += a[i - 1];
-            if (a[i] > maxi)
+            freq[i] += freq[i - 1];
+            if (freq[i] > freq[res])
             {
-                maxi = a[i];
-                ans = i;
+                res = i;
             }
         }
-        return ans;
+        return res;
     }
 };
 
