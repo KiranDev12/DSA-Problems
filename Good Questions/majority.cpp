@@ -44,7 +44,7 @@ int better(vector<int> v)
 int optimal(vector<int> a)
 {
     int ele, cnt = 0;
-    int size=a.size();
+    int size = a.size();
     for (int i = 0; i < size; i++)
     {
         if (cnt == 0)
@@ -77,6 +77,6 @@ int main()
     int ans = brute(arr);
     ans = better(arr);
     ans = optimal(arr);
-    cout << "The majority element is: " << ans << endl;
+    cout << "The ity element is: " << ans << endl;
     return 0;
 }
