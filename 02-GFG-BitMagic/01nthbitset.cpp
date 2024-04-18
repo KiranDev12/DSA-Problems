@@ -1,3 +1,16 @@
+/*
+?Question: Check if the k-th bit of a given number is set or not.
+*Difficulty: Easy
+
+-Intuition:
+- For left shift: 
+    - Left shift the number k-1 times.
+    - Check if the k-th bit is set using bitwise AND with 1.
+- For right shift:
+    - Right shift the number k-1 times.
+    - Check if the k-th bit is set using bitwise AND with 1.
+
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -25,4 +38,4 @@ int main()
     // Function call
     isKthBitSet2(n, k);
     return 0;
-}
+}   

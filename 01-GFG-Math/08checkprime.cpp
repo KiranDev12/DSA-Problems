@@ -1,8 +1,10 @@
+//? Find the prime factors of a number
+//* Easy
+//- The loop iterates from 5 up to the square root of the number, checking only every sixth number (i) and (i + 2). This is based on the fact that all primes greater than 3 can be expressed as 6k +/- 1 
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// function check whether a number
-// is prime or not
 bool isPrime(int n)
 {
     if (n <= 1)

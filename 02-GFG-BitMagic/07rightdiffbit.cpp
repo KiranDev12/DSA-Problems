@@ -1,40 +1,32 @@
-//{ Driver Code Starts
-// Initial Template for C++
+//? Question:
+//? Given two integers m and n, write a C++ program to find the position of the rightmost different bit in their binary representation.
+
+//* Difficulty: Easy
 
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
-// User function Template for C++
-
-class Solution
-{
+// User function
+class Solution {
 public:
-    // Function to find the first position with different bits.
-    int posOfRightMostDiffBit(int m, int n)
-    {
+    int posOfRightMostDiffBit(int m, int n) {
         if (m == n)
             return -1;
         int x = m ^ n;
         int k = x & (~(x - 1));
-        return log2(k) + 1;
+        return log2(k) + 1; // Returning the position of the rightmost set bit
     }
 };
 
-//{ Driver Code Starts.
-
-// Driver Code
-int main()
-{
+// Driver code
+int main() {
     int t;
-    cin >> t; // input number of testcases
-    while (t--)
-    {
+    cin >> t; // Input number of testcases
+    while (t--) {
         int m, n;
-        cin >> m >> n; // input m and n
+        cin >> m >> n; // Input m and n
         Solution ob;
-        cout << ob.posOfRightMostDiffBit(m, n) << endl;
+        cout << ob.posOfRightMostDiffBit(m, n) << endl; // Output the position of the rightmost different bit
     }
     return 0;
 }
-// } Driver Code Ends

@@ -1,21 +1,24 @@
+/*
+    ?Title: Print Power Set
+
+    *Approach:
+    We use bit manipulation to generate all subsets of a given set.
+    For each number from 0 to 2^set_size - 1, we check the set bits and print the corresponding elements.
+
+    -Time Complexity: O(2^N), where N is the size of the set
+    -Space Complexity: O(1)
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
-// Function to print all the power set
 void printPowerSet(char *set, int set_size)
 {
-    // Set_size of power set of a set with set_size
-    // n is (2^n-1)
     unsigned int pow_set_size = pow(2, set_size);
     int counter, j;
-
-    // Run from counter 000..0 to 111..1
     for (counter = 0; counter < pow_set_size; counter++)
     {
         for (j = 0; j < set_size; j++)
         {
-            // Check if jth bit in the counter is set
-            // If set then print jth element from set
             if (counter & (1 << j))
                 cout << set[j];
         }
@@ -23,7 +26,6 @@ void printPowerSet(char *set, int set_size)
     }
 }
 
-/*Driver code*/
 int main()
 {
     char set[] = {'a', 'b', 'c'};

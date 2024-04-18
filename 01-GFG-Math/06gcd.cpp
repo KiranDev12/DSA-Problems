@@ -1,3 +1,6 @@
+//? Find GCD of two numbers
+//* Easy
+
 class Solution
 {
 public:
@@ -34,6 +37,3 @@ public:
         return gcd;
     }
 };
-
-//! LCM (Least common multiple)
-//! LCM = a*b/gcd(a,b)

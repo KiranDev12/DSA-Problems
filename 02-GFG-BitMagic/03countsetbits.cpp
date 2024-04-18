@@ -1,10 +1,10 @@
-// C++ program to Count set
-// bits in an integer
+/* 
+?Function to get no of set bits in binary representation of positive integer n 
+*Easy
+*/
 #include <bits/stdc++.h>
 using namespace std;
 int preprocessed[256];
-/* Function to get no of set bits in binary
-representation of positive integer n */
 unsigned int brute(unsigned int n)
 {
     unsigned int count = 0;
@@ -16,6 +16,7 @@ unsigned int brute(unsigned int n)
     return count;
 }
 
+// O(Number of set bits) - TC optimized
 unsigned int better(int n)
 {
     unsigned int count = 0;
@@ -27,7 +28,6 @@ unsigned int better(int n)
     return count;
 }
 
-/* Program to test function countSetBits */
 int main()
 {
     int i = 9;

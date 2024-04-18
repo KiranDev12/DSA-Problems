@@ -1,16 +1,21 @@
-//{ Driver Code Starts
-// Initial Template for C++
+/*
+    ?Title: Count the number of bits to be flipped to convert A to B
+
+    * Approach:
+    We XOR A and B to find the bits that are different.
+    Then, we count the number of set bits in the result using Brian Kernighan's algorithm.
+
+    -Time Complexity: O(log N), where N is the maximum of A and B
+    -Space Complexity: O(1)
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
-// User function Template for C++
-
 class Solution
 {
 public:
-    // Function to find number of bits needed to be flipped to convert A to B
+
     int countBitsFlip(int a, int b)
     {
 
@@ -25,21 +30,17 @@ public:
     }
 };
 
-//{ Driver Code Starts.
-
-// Driver Code
 int main()
 {
     int t;
-    cin >> t;   // input the testcases
-    while (t--) // while testcases exist
+    cin >> t;   
+    while (t--) 
     {
         int a, b;
-        cin >> a >> b; // input a and b
+        cin >> a >> b; 
 
         Solution ob;
         cout << ob.countBitsFlip(a, b) << endl;
     }
     return 0;
 }
-// } Driver Code Ends

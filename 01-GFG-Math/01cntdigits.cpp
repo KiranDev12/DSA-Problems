@@ -1,3 +1,6 @@
+//? Count the number of digits in the integer n
+//* Easy
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -14,7 +17,6 @@ int countDigit(long long n)
     return count;
 }
 
-// Driver code
 int main(void)
 {
     long long n = 345289467;

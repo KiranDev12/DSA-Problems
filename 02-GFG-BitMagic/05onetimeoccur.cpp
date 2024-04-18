@@ -1,10 +1,8 @@
-// C++ program to find the element
-// occurring odd number of times
+//? C++ program to find the element occurring odd number of times
+//* Easy
+
 #include <bits/stdc++.h>
 using namespace std;
-
-// Function to find element occurring
-// odd number of times
 int getOddOccurrence(int ar[], int ar_size)
 {
     int res = 0;

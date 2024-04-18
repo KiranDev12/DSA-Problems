@@ -1,11 +1,9 @@
-//{ Driver Code Starts
-// Initial Template for C++
+/*
+?Power of two
+*Easy
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-// } Driver Code Ends
-// User function Template for C++
-
 class Solution
 {
 public:
@@ -18,10 +16,6 @@ public:
         return ((n & (n - 1)) == 0);
     }
 };
-
-//{ Driver Code Starts.
-
-// Driver code
 int main()
 {
 

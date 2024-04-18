@@ -1,11 +1,8 @@
-//{ Driver Code Starts
-// Initial template for C++
+//? Find roots of a quadratic equation
+//* Easy
 
 #include <bits/stdc++.h>
 using namespace std;
-
-// } Driver Code Ends
-// User function Template for C++
 
 class Solution
 {

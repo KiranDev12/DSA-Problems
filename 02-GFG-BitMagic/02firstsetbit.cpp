@@ -1,16 +1,14 @@
-//{ Driver Code Starts
-// Initial Template for C++
+/*
+?Question: Find the position of first set bit in a number
+*Difficulty: Easy
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
-// User function Template for C++
-
 class Solution
 {
 public:
-    // Function to find position of first set bit in the given number.
     unsigned int getFirstSetBit(int n)
     {
         // if(n==0) return 0;
@@ -37,7 +35,7 @@ int main()
         int n;
         cin >> n; // input n
         Solution ob;
-        printf("%u\n", ob.getFirstSetBit(n)); // function to get answer
+        printf("%u\n", ob.getFirstSetBit(n));
     }
     return 0;
 }

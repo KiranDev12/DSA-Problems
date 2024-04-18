@@ -1,4 +1,6 @@
-// C++ program to check if a number is Palindrome
+//? C++ program to check if a number is Palindrome
+//* Easy
+
 #include <iostream>
 using namespace std;
 // Function to check Palindrome
