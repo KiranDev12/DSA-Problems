@@ -1,7 +1,7 @@
 /*
 ?Question: Check if the k-th bit of a given number is set or not.
 *Difficulty: Easy
-
+/// Important is for the kth bit find 2^(k-1) and then just & with 1
 -Intuition:
 - For left shift: 
     - Left shift the number k-1 times.

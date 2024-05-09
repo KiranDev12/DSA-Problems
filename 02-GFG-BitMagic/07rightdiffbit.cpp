@@ -2,7 +2,7 @@
 //? Given two integers m and n, write a C++ program to find the position of the rightmost different bit in their binary representation.
 
 //* Difficulty: Easy
-
+//- Rightmost diff bit of 2 numbers will be the rightmost bit of their XOR and to get the position log2(k)+1
 #include <bits/stdc++.h>
 using namespace std;
 

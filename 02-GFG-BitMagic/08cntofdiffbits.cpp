@@ -8,7 +8,7 @@
     -Time Complexity: O(log N), where N is the maximum of A and B
     -Space Complexity: O(1)
 */
-
+///ALL THE SET BITS AFTER XOR ARE THE NUMBER OF BITS THAT ARE FLIPPED BETWEEN A and B
 #include <bits/stdc++.h>
 using namespace std;
 

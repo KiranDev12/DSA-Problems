@@ -2,6 +2,7 @@
 ?Question: Find the position of first set bit in a number
 *Difficulty: Easy
 */
+//- Keep running a loop that checks n&2^(i-1) if its 1 then return i as the set bit
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -17,10 +17,10 @@ class Solution
 {
     unsigned int swapBits(unsigned int n)
     {
-        unsigned int even_bits = n & 0xAAAAAAAA;
-        unsigned int odd_bits = n & 0X55555555;
-        even_bits >>= 1;
-        odd_bits <<= 1;
+        unsigned int even_bits = n & 0xAAAAAAAA; //all even are set
+        unsigned int odd_bits = n & 0X55555555; //all odd are set
+        even_bits >>= 1; //left shift by one
+        odd_bits <<= 1; //right shift by one
         return even_bits | odd_bits;
     }
 };

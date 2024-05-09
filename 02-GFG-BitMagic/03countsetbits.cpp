@@ -2,6 +2,10 @@
 ?Function to get no of set bits in binary representation of positive integer n 
 *Easy
 */
+///n = n&(n-1) which makes last set bit 0 
+//-Brute: just keep getting the last digit and divide by 10 it will take O(no of digits)
+//-Better: can get in O(no of set bits) by using the concept of n = n&(n-1) which makes last set bit 0 
+//-Optimal: Not really needed, just preprocess to get answer in O(1)
 #include <bits/stdc++.h>
 using namespace std;
 int preprocessed[256];

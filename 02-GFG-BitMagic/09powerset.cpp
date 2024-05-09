@@ -8,12 +8,14 @@
     -Time Complexity: O(2^N), where N is the size of the set
     -Space Complexity: O(1)
 */
+
+//-Did not really understand the for loops and the logic
 #include <bits/stdc++.h>
 using namespace std;
 
 void printPowerSet(char *set, int set_size)
 {
-    unsigned int pow_set_size = pow(2, set_size);
+    unsigned int pow_set_size = pow(2, set_size); // total possible combinations possible
     int counter, j;
     for (counter = 0; counter < pow_set_size; counter++)
     {

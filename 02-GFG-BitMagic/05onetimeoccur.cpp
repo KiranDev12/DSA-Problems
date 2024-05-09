@@ -1,6 +1,7 @@
 //? C++ program to find the element occurring odd number of times
 //* Easy
 
+//-just XOR all the numbers and u will end up with the odd times occuring number
 #include <bits/stdc++.h>
 using namespace std;
 int getOddOccurrence(int ar[], int ar_size)

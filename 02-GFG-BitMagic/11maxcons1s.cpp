@@ -10,6 +10,7 @@
     /*  Function to calculate the longest consecutive ones
     *   N: given input to calculate the longest consecutive ones
     */
+   
     class Solution
     {
     public:

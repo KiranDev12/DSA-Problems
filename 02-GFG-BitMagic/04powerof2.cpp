@@ -2,6 +2,8 @@
 ?Power of two
 *Easy
 */
+
+//- n&(n-1) makes last set bit 0 and hence the whole number will be zero if it is a power of 2
 #include <bits/stdc++.h>
 using namespace std;
 class Solution
