@@ -1,3 +1,5 @@
+//? Find the prime factors 
+//- follow the same flow of checks as that of checkprime function of previous question
 #include <iostream>
 #include <limits.h>
 using namespace std;

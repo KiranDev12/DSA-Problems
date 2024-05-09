@@ -1,6 +1,6 @@
 //? Find the LCM of two numbers
 //* Easy
-
+//- Do calculate gcd the same way
 //- LCM (Least common multiple)
 //- LCM = a*b/gcd(a,b)
 

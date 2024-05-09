@@ -1,6 +1,6 @@
 //? Find GCD of two numbers
 //* Easy
-
+//-Euclidean algo
 class Solution
 {
 public:

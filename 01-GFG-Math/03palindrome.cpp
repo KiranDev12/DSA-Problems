@@ -1,6 +1,6 @@
 //? C++ program to check if a number is Palindrome
 //* Easy
-
+//- reverse by using the last digit and appending it to the reversed no
 #include <iostream>
 using namespace std;
 // Function to check Palindrome

@@ -1,6 +1,6 @@
 //? Find roots of a quadratic equation
 //* Easy
-
+//-(-b+/-(b^2-4ac)^1/2)/2a 
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,6 +1,6 @@
 //? Count the number of digits in the integer n
 //* Easy
-
+//-keep dividing by 10 until the number is zero and increment count from 0
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,6 +1,6 @@
 //? C++ program to find the factorial of a number
 //* Easy
-
+//- n*fact(n-1) recursive until 0 or 1 as n return 1
 #include <iostream>
 using namespace std;
 
